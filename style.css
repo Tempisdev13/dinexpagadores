@@ -297,16 +297,6 @@ body {
             background: linear-gradient(180deg, rgba(231, 37, 111, 1) 0%, rgba(231, 5, 91, 1) 100%);
         }
 
-        .circulo {
-            background-color: #fff;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         .payer-box {
             background-color: #EDEDED;
             border-radius: 10px;
