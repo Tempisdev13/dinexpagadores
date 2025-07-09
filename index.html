@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral Fijo con Buscador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle con Popper (requerido para modales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:#E6ECEC">
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">¡Bienvenido!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body text-center p-0">
+                    <img src="imagenes/NEWSCONSOLA2025-WFA2.png" alt="Imagen de ejemplo" class="img-fluid rounded"
+                        style="padding: 0px; margin: 0px;" />
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Botón para móviles -->
+    <button class="btn btn-primary d-md-none m-3" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+        ☰ Menú
+    </button>
+    <div id="contenedorMenu"></div>
+    <div id="contenedorMenuDerecho"></div>
+    <div class="content p-3">
+        <!-- Contenido -->
+        <div class="content p-2 container-buttons">
+            <!-- Contenedor con margen alrededor -->
+            <div class="d-flex flex-wrap justify-content-between">
+                <a href="hacer-envio.html" class="btn btn-light m-1 button-style active">Hacer Envío</a>
+                <a href="larga-distancia.html" class="btn btn-light m-1 button-style ">Larga Distancia y
+                    recargas</a>
+                <a href="pago_bill_internacional.html" class="btn btn-light m-1 button-style ">Pago de Bill</a>
+                <a href="cierre-caja.html" class="btn btn-light m-1 button-style">Cierre de Caja</a>
+                <a href="cambio-cheques.html" class="btn btn-light m-1 button-style">Cambio de Cheques</a>
+                <a href="deposito-cheques.html" class="btn btn-light m-1 button-style">Depósito de Cheques</a>
+            </div>
+        </div>
+
+
+
+        <div class="content p-2 container-cards">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+
+                                    <div class="justify-content-start">
+                                        Remitente (¿Quién envía?)
+                                    </div>
+
+                                    <div class="justify-content-end">
+                                        <i class="fa-solid fa-eraser iconos-cards"></i>
+                                    </div>
+
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <!-- Bloque 1 -->
+
+                                            <div class="row mb-2">
+                                                <div class="col-12 position-relative">
+                                                    <label for="telefono" class="form-label text-label"
+                                                        style="font-size: 16px; color: #4C5C59;">Teléfono:</label>
+                                                    <input type="text" id="telefono" class="form-control" maxlength="10"
+                                                        style="
+                                                            height: 60px;
+                                                            background-color: rgba(0, 0, 0, 0.05);
+                                                            border: 2px solid #959595;
+                                                            font-weight: bold;
+                                                            color: #000000;
+                                                            font-size: 18px;
+                                                            padding-left: 15px;
+                                                            border-radius: 10px;
+                                                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                                                            transition: all 0.3s ease;"
+                                                        onfocus="this.style.borderColor='#4C5C59'; this.style.boxShadow='0 0 8px rgba(76, 92, 89, 0.2)'"
+                                                        onblur="this.style.borderColor='#959595'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.1)'"
+                                                        oninput="validarTelefono(this)">
+                                                    <i id="check-icon" class="fa-solid fa-circle-check"
+                                                        style="display: none; position: absolute; right: 25px; top: 45px; font-size: 22px; color: #28a745;"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="nombre" class="form-label text-label">Nombre(s)</label>
+                                                    <input type="text" id="nombre" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="apellido1" class="form-label text-label">Apellido
+                                                        1:</label>
+                                                    <input type="text" id="apellido1" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="apellido2" class="form-label text-label">Apellido
+                                                        2:</label>
+                                                    <input type="text" id="apellido2" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="tarjeta" class="form-label text-label">Tarjeta
+                                                        Lealtad:</label>
+                                                    <input type="text" id="tarjeta" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="email" class="form-label text-label">Email:</label>
+                                                    <input type="text" id="email" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-6">
+                                                    <label for="direccion"
+                                                        class="form-label text-label">Dirección:</label>
+                                                    <input type="text" id="direccion" class="form-control">
+                                                </div>
+                                                <div class="col-3">
+                                                    <label for="apt" class="form-label text-label">Apt:</label>
+                                                    <input type="text" id="apt" class="form-control">
+                                                </div>
+                                                <div class="col-3">
+                                                    <label for="zip" class="form-label text-label">Zip Code:</label>
+                                                    <input type="text" id="zip" class="form-control">
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+
+                                    <div class="justify-content-start">
+                                        Beneficiario (¿Quién recibe?)
+                                    </div>
+
+                                    <div class="justify-content-end">
+                                        <select id="comision" class="form-select w-100" style="height: 35px;">
+                                            <option value="" selected>Seleccionar</option>
+                                            <option value="1">Juan Carlos López</option>
+                                            <option value="2">Damian Alvarez</option>
+                                            <option value="3">Yazmin Garcia Reyes</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <!-- Bloque 1 -->
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Nombre(s):</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Apellido 1:
+                                                        Lealtad:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Apellido 2:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Teléfono:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+                                    <div class="justify-content-start">
+                                        Información del envió
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <i class="fa-solid fa-er    aser iconos-cards"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <!-- Bloque 1 -->
+                                            <div class="row mb-4">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">País:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected>Selecciona</option>
+                                                            <option value="1">México</option>
+                                                            <option value="2">Guatemala</option>
+                                                            <option value="3">El Salvador</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-8">
+                                                    <label for="monto" class="form-label text-label">Buscar</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <!-- Botón Ventanilla -->
+                                                        <div class="col-3">
+                                                            <button class="btn-ventanilla">
+                                                                <i class="fas fa-store"></i> Ventanilla
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón Deposito -->
+                                                        <div class="col-3">
+                                                            <button class="btn-deposito">
+                                                                <i class="fas fa-piggy-bank"></i> Depósito
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón ATM -->
+                                                        <div class="col-3">
+                                                            <button class="btn-atm">
+                                                                <i class="fas fa-credit-card"></i> ATM
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón Domicilio -->
+                                                        <div class="col-3">
+                                                            <button class="btn-domicilio">
+                                                                <i class="fas fa-home"></i> Domicilio
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">País:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Estado, provincia o
+                                                        adepto:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Ciudad:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="container-cards-hijas">
+                        <div class="card-header text-white justify-content-between align-items-center">
+                            <div class="justify-content-start">
+                                ¿Cuanto envia?
+                            </div>
+                            <div class="justify-content-end">
+                                <i class="fa-solid fa-eraser iconos-cards"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="card-body">
+                                <div class="container-fluid p-0">
+                                    <!-- Bloque 1 -->
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <label for="monto" class="form-label text-label">Monto</label>
+                                            <input type="text" id="monto" class="form-control verde">
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 2 -->
+                                    <div class="row mb-2">
+                                        <div class="col-4 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <select id="comision" class="form-select w-100">
+                                                <option value="" selected>0%</option>
+                                                <option value="1">5%</option>
+                                                <option value="2">10%</option>
+                                                <option value="3">15%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 3 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Total descuento:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 4 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Monto en USD:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 5 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión extra:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 6 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Total:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 7 -->
+                                    <div class="row mt-2 mb-3">
+                                        <div class="col-4 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <select id="comision" class="form-select w-100">
+                                                <option value="" selected>0%</option>
+                                                <option value="1">5%</option>
+                                                <option value="2">10%</option>
+                                                <option value="3">15%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 8 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión extra:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 9 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Monto en MN:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="container-cards-hijas mt-3">
+                        <div class="card-header text-white justify-content-between align-items-center">
+                            <div class="justify-content-start">
+                                Documentos
+                            </div>
+                        </div>
+                        <link rel="stylesheet"
+                            href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="container-fluid p-0">
+                                    <table id="verificacionesTable" class="table table-striped table-sm align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Documento</th>
+                                                <th class="text-center">Estado</th>
+                                                <th class="text-center">Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">Identificación</td>
+                                                <td class="text-center">
+                                                    <i class="fas fa-check-circle text-success" title="Aprobado"></i>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalINE">
+                                                        <i class="fas fa-eye" style="color: #474747;"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarImagen"
+                                                        data-documento="Identificación">
+                                                        <i class="fas fa-edit" style="color: #474747;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">Tarjeta</td>
+                                                <td class="text-center">
+                                                    <i class="fas fa-times-circle text-danger" title="Rechazado"></i>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalTarjeta">
+                                                        <i class="fas fa-eye" style="color: #474747;"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarImagen" data-documento="Tarjeta">
+                                                        <i class="fas fa-edit" style="color: #474747;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">Foto</td>
+                                                <td class="text-center">
+                                                    <i class="fas fa-check-circle text-success" title="Aprobado"></i>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalFoto">
+                                                        <i class="fas fa-eye" style="color: #474747;"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm p-0 m-0" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditarImagen" data-documento="Foto">
+                                                        <i class="fas fa-edit" style="color: #474747;"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+
+
+
+                                    <!-- Modal INE -->
+                                    <div class="modal fade" id="modalINE" tabindex="-1" aria-labelledby="modalINELabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalINELabel">Detalle de INE</h5>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <img src="../qr-1.jpg" class="img-fluid rounded" alt="INE">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal Tarjeta -->
+                                    <div class="modal fade" id="modalTarjeta" tabindex="-1"
+                                        aria-labelledby="modalTarjetaLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalTarjetaLabel">Detalle de Tarjeta
+                                                    </h5>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <img src="../debitcard_front_blue.png" class="img-fluid rounded"
+                                                        alt="INE">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal Foto -->
+                                    <div class="modal fade" id="modalFoto" tabindex="-1"
+                                        aria-labelledby="modalFotoLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalFotoLabel">Detalle de Foto</h5>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <img src="../695441-retrato-hombre-frente-a-la-cámara.jpg"
+                                                        class="img-fluid rounded" alt="INE">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modalEditarImagen" tabindex="-1"
+                                        aria-labelledby="modalEditarImagenLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <form id="formEditarImagen">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEditarImagenLabel">Editar
+                                                            Imagen</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Cerrar"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="mb-3">
+                                                            <label for="imagenInput" class="form-label">Seleccionar
+                                                                imagen</label>
+                                                            <input class="form-control" type="file" id="imagenInput"
+                                                                accept=".jpg, .jpeg, .png">
+                                                            <small class="form-text text-muted">Solo se permiten
+                                                                archivos JPG, JPEG o PNG.</small>
+                                                        </div>
+                                                        <!-- Vista previa de la imagen -->
+                                                        <div class="mb-3">
+                                                            <img id="imagenPreview" src="#" alt="Vista previa"
+                                                                class="img-fluid" style="display:none;">
+                                                        </div>
+                                                        <input type="hidden" id="documentoActual">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-primary">Guardar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row mt-3">
+                        <div class="col-12 mb-1">
+                            <button class="btn-pre-recibo">Pre-recibo</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-enviar">Enviar</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-pago-tarjeta">Pago con tarjeta</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-cancelar">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Modal de Configuración -->
+
+    <!-- Modal de Configuración -->
+    <!-- Modal de Configuración (JS tabs personalizados) -->
+    <div class="modal fade" id="modalConfiguracion" tabindex="-1" aria-labelledby="modalConfiguracionLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalConfiguracionLabel">Configuración</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <!-- Body con pestañas personalizadas -->
+                <div class="modal-body">
+                    <div class="d-flex mb-3 gap-2">
+                        <button class="btn btn-outline-primary tab-btn active" data-tab="impresora">Impresora</button>
+                        <button class="btn btn-outline-primary tab-btn" data-tab="idioma">Idioma</button>
+                        <button class="btn btn-outline-primary tab-btn" data-tab="sistema">Sistema</button>
+                        <button class="btn btn-outline-primary tab-btn"
+                            data-tab="notificaciones">Notificaciones</button>
+                    </div>
+
+                    <div class="tab-content-js">
+                        <div class="tab-pane-js active" id="impresora">
+                            <p>Contenido para configurar impresora...</p>
+                        </div>
+                        <div class="tab-pane-js" id="idioma">
+                            <p>Contenido para configurar idioma...</p>
+                        </div>
+                        <div class="tab-pane-js" id="sistema">
+                            <p>Contenido para configurar sistema...</p>
+                        </div>
+                        <div class="tab-pane-js" id="notificaciones">
+                            <p>Contenido para configurar notificaciones...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar el menú principal
+        fetch('../menu.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('contenedorMenu').innerHTML = data;
+                // Llamar al archivo menu_activador.js después de cargar el menú
+                loadMenuActivator();
+            });
+        // Cargar el menú derecho
+        fetch('../menu_derecho.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('contenedorMenuDerecho').innerHTML = data;
+            });
+    </script>
+    <script>
+        document.querySelectorAll('[data-bs-target="#modalEditarImagen"]').forEach(button => {
+            button.addEventListener('click', () => {
+                const doc = button.getAttribute('data-documento');
+                document.getElementById('modalEditarImagenLabel').textContent = `Editar imagen de ${doc}`;
+                document.getElementById('documentoActual').value = doc;
+            });
+        });
+
+        document.getElementById('formEditarImagen').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const archivo = document.getElementById('imagenInput').files[0];
+            const doc = document.getElementById('documentoActual').value;
+
+            if (!archivo) {
+                alert("Selecciona una imagen primero");
+                return;
+            }
+
+            // Aquí podrías hacer una petición AJAX para subir la imagen
+
+            alert(`Imagen para ${doc} cargada correctamente`);
+            const modal = bootstrap.Modal.getInstance(document.getElementById('modalEditarImagen'));
+            modal.hide();
+        });
+
+        // Función para mostrar la vista previa de la imagen seleccionada
+        document.getElementById('imagenInput').addEventListener('change', function (event) {
+            var reader = new FileReader();
+            var file = event.target.files[0];
+
+            // Solo si se selecciona un archivo válido
+            if (file && file.type.match('image.*')) {
+                reader.onload = function (e) {
+                    var imgElement = document.getElementById('imagenPreview');
+                    imgElement.src = e.target.result; // Establecer el src de la imagen
+                    imgElement.style.display = 'block'; // Mostrar la imagen
+                }
+                reader.readAsDataURL(file);
+            } else {
+                document.getElementById('imagenPreview').style.display = 'none'; // Ocultar si no es una imagen válida
+            }
+        });
+    </script>
+
+    <script>
+        function validarTelefono(input) {
+            const icono = document.getElementById('check-icon');
+            const soloNumeros = input.value.replace(/\D/g, '');
+            input.value = soloNumeros;
+
+            if (soloNumeros.length === 10) {
+                icono.style.display = 'inline';
+            } else {
+                icono.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <script>
+        function validarTelefono(input) {
+            const telefono = input.value;
+
+            if (telefono.length === 10 && /^[0-9]+$/.test(telefono)) {
+                document.getElementById('check-icon').style.display = 'block';
+
+                // Llenado de datos falsos
+                document.getElementById('nombre').value = "Juanito";
+                document.getElementById('apellido1').value = "Pérez";
+                document.getElementById('apellido2').value = "Gómez";
+                document.getElementById('tarjeta').value = "1234-5678-9012";
+                document.getElementById('email').value = "juanito@example.com";
+                document.getElementById('direccion').value = "Calle Falsa 123";
+                document.getElementById('apt').value = "A1";
+                document.getElementById('zip').value = "64000";
+            } else {
+                document.getElementById('check-icon').style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <!-- Cargar el script del activador del menú -->
+    <script src="../js/menu_activador.js"></script>
+
+</body>
+
+</html>

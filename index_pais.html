@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinex - Envío de Dinero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            background-color: #eff2f7;
+        }
+
+        .hero img.flag {
+            width: 120px;
+            bottom: 0;
+        }
+
+        .hero img.monument {
+            position: absolute;
+            right: -40px;
+            bottom: 0;
+            max-height: 210px;
+            max-width: 190px;
+        }
+
+        .methods img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            background: #a5b615;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .payers img {
+            max-height: 40px;
+            margin: 10px;
+        }
+
+        .contact-icons i {
+            font-size: 35px;
+            color: #000;
+        }
+
+        .footer {
+            background: #111;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .footer img.app {
+            margin-top: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .methods p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .btn-outline-danger {
+            font-weight: 600;
+        }
+
+        .bg-degradado {
+            background: #E7256F;
+            background: linear-gradient(180deg, rgba(231, 37, 111, 1) 0%, rgba(231, 5, 91, 1) 100%);
+        }
+
+        .circulo {
+            background-color: #fff;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../imagenes/logo dinex.png" alt="Dinex Logo" height="50"></a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cumplimiento legal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Comunicados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Envía dinero a <span id="pais-destino" class="text-success">[PAÍS]</span></h1>
+        <h1>Lista de países</h1>
+        <ul id="countries-list"></ul>
+
+        <p>Tu familia puede recibir dinero en muchos lugares.</p>
+        <img id="flag" src="" alt="Bandera del país" style="width: 250px;" />
+        <img src="https://us.123rf.com/450wm/jkraft5/jkraft51304/jkraft5130400084/19089599-a-black-and-white-silhouette-of-the-angel-of-independence-in-mexico-city.jpg"
+            alt="Ángel de la Independencia" class="monument d-none">
+    </div>
+
+    <!-- Métodos de envío -->
+    <div class="container text-center my-5">
+        <div class="row methods justify-content-center">
+            <div class="col-md-3" data-type="CASH">
+                <img src="https://www.dinexenvios.com/images/send-money-main.png" alt="Cobro en ventanilla"
+                    style="width: 110px;height: 110px;">
+                <p style="color: #293E63;font-weight: 600;">Cobro en ventanilla</p>
+            </div>
+            <div class="col-md-3" data-type="DEPOSIT">
+                <img src="https://www.dinexenvios.com/images/top-up-main.png" alt="Depósito a cuenta"
+                    style="width: 110px;height: 110px;">
+                <p style="color: #293E63;font-weight: 600;">Depósito a cuenta</p>
+            </div>
+            <div class="col-md-3" data-type="ATM">
+                <img src="https://www.dinexenvios.com/images/send-money-main.png" alt="Cobro en ATM"
+                    style="width: 110px;height: 110px;">
+                <p style="color: #293E63;font-weight: 600;">Cobro en ATM</p>
+            </div>
+            <div class="col-md-3" data-type="HOME_DELIVERY">
+                <img src="https://www.dinexenvios.com/images/pay-bills-main.png" alt="Entrega a domicilio"
+                    style="width: 110px;height: 110px;">
+                <p style="color: #293E63;font-weight: 600;">Entrega a domicilio</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cobertura -->
+    <div class="section-title" style="font-size: 35px;">COBERTURA Y PAGADORES</div>
+    <div class="container text-center my-4">
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <p style="font-size: 24px; font-weight: 400">Con Dinex puedes enviar dinero a México los siguientes
+                    Bancos y Puntos de Pago.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center payers mt-3">
+            <div class="col-3">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;padding: 15px;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-3">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;padding: 15px;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-3">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;padding: 15px;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-3">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;padding: 15px;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row justify-content-center payers mt-4">
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center payers mt-4">
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+            <div class="col-2">
+                <div
+                    style="background-color: #EDEDED;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; width: 90%;">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png" alt="OXXO">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <button class="btn btn-outline-danger mt-4">Ver todos</button>
+    </div>
+
+    <!-- Contacto -->
+    <div class="bg-degradado text-white text-center py-5">
+        <h2>Contáctanos</h2>
+        <div class="d-flex justify-content-center gap-5 mt-4 contact-icons">
+            <div class="circulo">
+                <i class="fa-brands fa-whatsapp" style="color: #404040;"></i>
+            </div>
+            <div class="circulo">
+                <i class="fa-brands fa-facebook-f" style="color: #404040;"></i>
+            </div>
+            <div class="circulo">
+                <a href="#"><i class="fab fa-instagram" style="color: #404040;"></i></a>
+            </div>
+            <div class="circulo">
+                <a href="#"><i class="fab fa-x-twitter" style="color: #404040;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://dinex.com.mx/assets/img/logo.png" alt="Dinex Logo" height="40">
+                <p class="mt-3">5851 San Felipe St. Suite 400 Houston, TX 77057<br>+1 (888) 995-4639</p>
+            </div>
+            <div class="col-md-2">
+                <h6>ABOUT US</h6>
+                <a href="#">Our History</a><br>
+                <a href="#">Become an Agent</a><br>
+                <a href="#">Compliance</a><br>
+                <a href="#">Careers</a>
+            </div>
+            <div class="col-md-2">
+                <h6>SERVICES</h6>
+                <a href="#">Send Money</a><br>
+                <a href="#">Pay Bills</a><br>
+                <a href="#">Mobile Top-ups</a><br>
+                <a href="#">International Calls</a>
+            </div>
+            <div class="col-md-2">
+                <h6>LEGAL</h6>
+                <a href="#">Privacy Policy</a><br>
+                <a href="#">Terms and Conditions</a><br>
+                <a href="#">File a Complaint</a>
+            </div>
+            <div class="col-md-2">
+                <h6>APPS</h6>
+                <img src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" height="40" alt="Play Store"
+                    class="app">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="40"
+                    alt="App Store" class="app">
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <img src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg" alt="Let's Encrypt" height="30">
+            <div class="mt-2">
+                <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <small class="d-block mt-2">&copy; 2024 DINEX - Todos los derechos reservados.</small>
+        </div>2
+    </div>
+<script>
+  const countryIdToData = {
+    1: { code: 'MEX', name: 'México' },
+    2: { code: 'PER', name: 'Perú' },
+    3: { code: 'ARG', name: 'Argentina' },
+    4: { code: 'BOL', name: 'Bolivia' },
+    6: { code: 'ECU', name: 'Ecuador' },
+    7: { code: 'SLV', name: 'El Salvador' },
+    8: { code: 'GTM', name: 'Guatemala' },
+    9: { code: 'COL', name: 'Colombia' },
+    10: { code: 'DOM', name: 'República Dominicana' },
+    11: { code: 'BRA', name: 'Brasil' },
+    12: { code: 'HND', name: 'Honduras' },
+    13: { code: 'NIC', name: 'Nicaragua' },
+    14: { code: 'USA', name: 'Estados Unidos' },
+    15: { code: 'IND', name: 'India' },
+    16: { code: 'PAN', name: 'Panamá' },
+    17: { code: 'CRI', name: 'Costa Rica' },
+    20: { code: 'CHL', name: 'Chile' },
+    21: { code: 'PHL', name: 'Filipinas' },
+    22: { code: 'BGD', name: 'Bangladesh' },
+    27: { code: 'KEN', name: 'Kenia' },
+    30: { code: 'SEN', name: 'Senegal' },
+  };
+
+  const isoAlpha2 = {
+    MEX: 'mx',
+    PER: 'pe',
+    ARG: 'ar',
+    BOL: 'bo',
+    ECU: 'ec',
+    SLV: 'sv',
+    GTM: 'gt',
+    COL: 'co',
+    DOM: 'do',
+    BRA: 'br',
+    HND: 'hn',
+    NIC: 'ni',
+    USA: 'us',
+    IND: 'in',
+    PAN: 'pa',
+    CRI: 'cr',
+    CHL: 'cl',
+    PHL: 'ph',
+    BGD: 'bd',
+    KEN: 'ke',
+    SEN: 'sn',
+  };
+
+  const urlParams = new URLSearchParams(window.location.search);
+  let countryId = urlParams.get('country_id');
+
+  // Si no existe o no es válido, usar México (id=1)
+  if (!countryId || !countryIdToData[countryId]) {
+    countryId = '1';
+  }
+
+  const { code, name } = countryIdToData[countryId];
+  const isoCode = isoAlpha2[code];
+
+  // Cambiar nombre en el encabezado
+  const paisDestino = document.getElementById('pais-destino');
+  if (paisDestino) paisDestino.textContent = name;
+
+  // Cambiar bandera
+  const flagImg = document.getElementById('flag');
+  if (flagImg && isoCode) {
+    flagImg.src = `https://flagcdn.com/w320/${isoCode}.png`;
+    flagImg.alt = `Bandera de ${name}`;
+  }
+
+  // Cargar métodos de pago
+  fetch('dinex-countries-payer.json')
+    .then(res => res.json())
+    .then(data => {
+      const selectedCountry = data.find(c => c.CountryCode === code);
+      const validTypes = selectedCountry?.PaymentTypes.map(pt => pt.PaymentTypeGroup) || [];
+
+      document.querySelectorAll('.methods [data-type]').forEach(el => {
+        const tipo = el.getAttribute('data-type');
+        el.style.display = validTypes.includes(tipo) ? '' : 'none';
+      });
+    })
+    .catch(err => {
+      console.error('Error cargando tipos de pago:', err);
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>

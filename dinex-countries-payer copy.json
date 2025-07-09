@@ -1,0 +1,4986 @@
+[
+    {
+        "IdCountry": 1,
+        "CountryCode": "MEX",
+        "CountryName": "MEXICO",
+        "PaymentTypes": [
+            {
+                "PaymentTypeGroup": "ATM"
+            },
+            {
+                "PaymentTypeGroup": "CASH"
+            },
+            {
+                "PaymentTypeGroup": "DEPOSIT"
+            }
+        ],
+        "Payers": [
+            {
+                "IdPayer": 1,
+                "PayerCode": "BBV",
+                "PayerName": "BANCOMER",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "ATM",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1774,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 650.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1300.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1300.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 6,
+                "PayerCode": "TLC",
+                "PayerName": "TELECOM TELEGRAFOS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1622,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 95,
+                "PayerCode": "SORIA",
+                "PayerName": "SORIANA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 779,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 146,
+                "PayerCode": "BANORTE",
+                "PayerName": "BANORTE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1070,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurr ency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4800.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2800.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 147,
+                "PayerCode": "CPM",
+                "PayerName": "CAJA POPULAR MEXICANA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 492,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4900.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 221,
+                "PayerCode": "012",
+                "PayerName": "BANCOMER-BBVA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 222,
+                "PayerCode": "072",
+                "PayerName": "BANORTE-IXE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 223,
+                "PayerCode": "014",
+                "PayerName": "SANTANDER CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 224,
+                "PayerCode": "002",
+                "PayerName": "BANAMEX CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 225,
+                "PayerCode": "044",
+                "PayerName": "SCOTIABANK CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 226,
+                "PayerCode": "062",
+                "PayerName": "BANCA AFIRME CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 228,
+                "PayerCode": "058",
+                "PayerName": "BANREGIO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 229,
+                "PayerCode": "021",
+                "PayerName": "HSBC CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 232,
+                "PayerCode": "BCL",
+                "PayerName": "BANCOPPEL",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1057,
+                "Limits": [
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2999.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 277,
+                "PayerCode": "FRAGU",
+                "PayerName": "FARMACIAS GUADALAJARA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2867,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 900.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 345,
+                "PayerCode": "24XORO",
+                "PayerName": "BANCO AFIRME (VENTANILLA\/CUENTA 9-11 DIGIITOS)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 185,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 19990.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 422,
+                "PayerCode": "BANORTE",
+                "PayerName": "BANORTE LIMITED",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 120,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 15,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 423,
+                "PayerCode": "CPM",
+                "PayerName": "CAJA POPULAR MEXICANA LIMITED",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 5,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    },
+                    {
+                        "TimeInDays": 15,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 424,
+                "PayerCode": "FOLIO_MEX",
+                "PayerName": "CAJA POPULAR LAS HUASTECAS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 35,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 427,
+                "PayerCode": "AIRPAK",
+                "PayerName": "AIRPAK 7,000 MXN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 898,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 7000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 507,
+                "PayerCode": "WALMART",
+                "PayerName": "BODEGA AURRERA (MAX $1,800 USD \/ ENVIO)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1315,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1800.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 510,
+                "PayerCode": "WALMART",
+                "PayerName": "WALMART (MAX $1,800 USD \/ ENVIO)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "Curr encyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 421,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1800.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 512,
+                "PayerCode": "ISSEG",
+                "PayerName": "FARMACIAS ISSEG",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 202,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 899,
+                "PayerCode": "138",
+                "PayerName": "ABC CAPITAL CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 901,
+                "PayerCode": "042",
+                "PayerName": "MIFEL CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 902,
+                "PayerCode": "133",
+                "PayerName": "ACTINVER CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 904,
+                "PayerCode": "152",
+                "PayerName": "BANCREA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeI nDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 905,
+                "PayerCode": "145",
+                "PayerName": "BASE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 906,
+                "PayerCode": "126",
+                "PayerName": "BANCO CREDIT SUISSE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 907,
+                "PayerCode": "154",
+                "PayerName": "BANCO COVALTO-FINTERRA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 909,
+                "PayerCode": "150",
+                "PayerName": "BANCO INMOBILIARIO MEXICANO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 911,
+                "PayerCode": "059",
+                "PayerName": "INVEX CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 912,
+                "PayerCode": "110",
+                "PayerName": "JP MORGAN CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Cur rencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 913,
+                "PayerCode": "112",
+                "PayerName": "MONEX CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 915,
+                "PayerCode": "148",
+                "PayerName": "PAGATODO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 916,
+                "PayerCode": "156",
+                "PayerName": "SABADELL CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 917,
+                "PayerCode": "113",
+                "PayerName": "VE POR MAS CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 918,
+                "PayerCode": "106",
+                "PayerName": "BANK OF AMERICA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 921,
+                "PayerCode": "060",
+                "PayerName": "BANSI CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 922,
+                "PayerCode": "129",
+                "PayerName": "BARCLAYS CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 923,
+                "P ayerCode": "143",
+                "PayerName": "CIBANCO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 924,
+                "PayerCode": "140",
+                "PayerName": "CONSUBANCO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 926,
+                "PayerCode": "151",
+                "PayerName": "FDONDE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 927,
+                "PayerCode": "136",
+                "PayerName": "INTERCAM BANCO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 931,
+                "PayerCode": "006",
+                "PayerName": "BANCOMEXT CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 932,
+                "PayerCode": "009",
+                "PayerName": "BANOBRAS CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 933,
+                "PayerCode": "019",
+                "PayerName": "BANJERCITO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 934,
+                "PayerCode": "135",
+                "PayerName": "NAFIN CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 15000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 938,
+                "PayerCode": "030",
+                "PayerName": "BAJIO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 942,
+                "PayerCode": "130",
+                "PayerName": "COMPARTAMOS CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 944,
+                "PayerCode": "036",
+                "PayerName": "INBURSA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 947,
+                "PayerCode": "WLD",
+                "PayerName": "TIENDAS WALDOS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 698,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 16000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 50000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 250000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 948,
+                "PayerCode": "WALMART",
+                "PayerName": "BODEGA AURRERA EXPRESS (MAX $1,800 USD \/ ENVIO)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1204,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1800.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 949,
+                "PayerCode": "C0100",
+                "PayerName": "CHEDRAUI EFECTIVO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 302,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 20000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 958,
+                "PayerCode": "WLD",
+                "Payer Name": "ELECZION",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 308,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 16000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 50000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 250000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1037,
+                "PayerCode": "4",
+                "PayerName": "FARMACIAS DEL AHORRO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1451,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 3600.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 6000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 12500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1058,
+                "PayerCode": "WALMART",
+                "PayerName": "WALMART LIMITED",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 9,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1059,
+                "PayerCode": "WALMART",
+                "PayerName": "BODEGA AURRERA LIMITED",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 62,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1064,
+                "PayerCode": "BCL",
+                "PayerName": "BANCOPPEL LIMITED",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 323,
+                "Limits": [
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1065,
+                "PayerCode": "TDC",
+                "PayerName": "FARMACIAS SANTA MARIA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 35,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "ME XICO - MEXICAN PESO",
+                        "Amount": 13000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1067,
+                "PayerCode": "OXXO",
+                "PayerName": "OXXO (MAX $4,000 MXN)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 23495,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 4000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1070,
+                "PayerCode": "4",
+                "PayerName": "TIENDAS DEL SOL",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 80,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 25000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 40000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 70000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1071,
+                "PayerCode": "TD2",
+                "PayerName": "SUPER Q",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 193,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1072,
+                "PayerCode": "MC001",
+                "PayerName": "AGENCIAS ORDER EXPRESS $500",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 18,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1073,
+                "PayerCode": "MC001",
+                "PayerName": "AGENCIAS ORDER EXPRESS $1000",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 274,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1076,
+                "PayerCode": "PIX",
+                "PayerName": "I NTERMEX $300",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 110,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1077,
+                "PayerCode": "PIX",
+                "PayerName": "INTERMEX $500",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 508,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1078,
+                "PayerCode": "PIX",
+                "PayerName": "INTERMEX $1500",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 532,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1079,
+                "PayerCode": "PIX",
+                "PayerName": "CASA LEY $1500",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 287,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1080,
+                "PayerCode": "PIX",
+                "PayerName": "TIENDAS LORES $500",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 89,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1092,
+                "PayerCode": "4",
+                "PayerName": "WOOLWORTH",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 50,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 25000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 40000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 70000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1104,
+                "PayerCode": "7ELEVEN",
+                "PayerName": "7ELEVEN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2077,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "Coun tryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1108,
+                "PayerCode": "128",
+                "PayerName": "AUTOFIN CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1109,
+                "PayerCode": "147",
+                "PayerName": "BANKAOOL CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1110,
+                "PayerCode": "166",
+                "PayerName": "BANSEFI-BABIEN CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1111,
+                "PayerCode": "677",
+                "PayerName": "CAJA POPULAR MEXICANA CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1112,
+                "PayerCode": "634",
+                "PayerName": "FINCOMUN CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1114,
+                "PayerCode": "646",
+                "PayerName": "STP CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1115,
+                "PayerCode": "608",
+                "PayerName": "VECTOR CLABE \/ TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1117,
+                "PayerCode": "ELKTR",
+                "PayerName": "ELEKTRA - Banco Azteca MEXICO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 3552,
+                "Limits": [
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICA N PESO",
+                        "Amount": 200000.0000
+                    },
+                    {
+                        "TimeInDays": 365,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2200000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 90000.0000
+                    },
+                    {
+                        "TimeInDays": 365,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 650000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 87000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 66150.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 66150.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1121,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIAS FARMACENTRO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1122,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIAS GYM",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1123,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIAS SANTA CRUZ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1124,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIAS ZAPOTLAN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Bra nches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1125,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIAS SAN FRANCISCO DE ASIS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1126,
+                "PayerCode": "APM",
+                "PayerName": "CIRCLE K MEXICO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 774,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1127,
+                "PayerCode": "APM",
+                "PayerName": "TIENDAS EXTRA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 448,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1128,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIA DE DIOS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "A mount": 9900.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1130,
+                "PayerCode": "PIX",
+                "PayerName": "FARMACIA NOSARCO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1131,
+                "PayerCode": "PIX",
+                "PayerName": "FARMATODO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 0,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 9900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 2500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1183,
+                "PayerCode": "TD0",
+                "PayerName": "RED PAGOS EFECTIVOS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 60,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1184,
+                "PayerCode": "TD1",
+                "PayerName": "HEB",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 57,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 42000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1185,
+                "PayerCode": "TD3",
+                "PayerName": "MONEY COOP",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 95,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STAT ES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1186,
+                "PayerCode": "TD4",
+                "PayerName": "SUPER DEL NORTE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 77,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1187,
+                "PayerCode": "TD5",
+                "PayerName": "MI GASOLINA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 7,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1189,
+                "PayerCode": "TD7",
+                "PayerName": "GRUPO AGUIRRE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 13,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 15000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1190,
+                "PayerCode": "TD8",
+                "PayerName": "CAJA POPULAR JOSE MA. MERCADO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 10,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1191,
+                "PayerCode": "TD9",
+                "PayerName": "MADERAS Y MATERIALES DE RIO VERDE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 9,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1192,
+                "PayerCode": "TDA",
+                "PayerName": "EL PREMIO MAYOR",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 5,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1193,
+                "PayerCode": "TDB",
+                "PayerName": "VIC PRONTO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 5,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 20000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1194,
+                "PayerCode": "TDD",
+                "PayerName": "CONSTRURAMA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 10,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1195,
+                "PayerCode": "TDE",
+                "PayerName": "CAJA SOLIDARIA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 37,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 30000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1196,
+                "PayerCode": "TDF",
+                "PayerName": "CAJA CERANO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 30,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1197,
+                "PayerCode": "TDG",
+                "PayerName": "CAJA TAMAZULA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 26,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1198,
+                "PayerCode": "TDH",
+                "PayerName": "EL FLORIDO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 49,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 13000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1199,
+                "PayerCode": "APM",
+                "PayerName": "AL SUPER",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 82,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1500.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1200,
+                "PayerCode": "TDJ",
+                " PayerName": "GRUPO BALSAS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 41,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1277,
+                "PayerCode": "APM",
+                "PayerName": "SEARS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 97,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 900.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1278,
+                "PayerCode": "APM",
+                "PayerName": "SANBORNS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 150,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 900.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1279,
+                "PayerCode": "APM",
+                "PayerName": "DAX",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 25,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 900.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1299,
+                "PayerCode": "PIX",
+                "PayerName": "INTERMEX $1000",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 168,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 1000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1305,
+                "PayerCode": "108",
+                "PayerName": "MUFG CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1306,
+                "PayerCode": "141",
+                "PayerName": "VOLKSWAGEN CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1307,
+                "PayerCode": "155",
+                "PayerName": "ICBC CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1308,
+                "PayerCode": "157",
+                "PayerName": "SHINHAN CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1309,
+                "PayerCode": "158",
+                "PayerName": "MIZUHO BANK CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1310,
+                "PayerCode": "160",
+                "PayerName": "BANCO S3 CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1312,
+                "PayerCode": "601",
+                "PayerName": "GBM CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1313,
+                "PayerCode": "602",
+                "PayerName": "MASARI CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1314,
+                "PayerCode": "605",
+                "PayerName": "VALUE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1316,
+                "PayerCode": "616",
+                "PayerName": "FINAMEX CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1317,
+                "PayerCode": "617",
+                "PayerN ame": "VALMEX CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1318,
+                "PayerCode": "620",
+                "PayerName": "PROFUTURO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1319,
+                "PayerCode": "631",
+                "PayerName": "CI BOLSA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1321,
+                "PayerCode": "642",
+                "PayerName": "REFORMA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1322,
+                "PayerCode": "648",
+                "PayerName": "EVERCORE CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1323,
+                "PayerCode": "652",
+                "PayerName": "CREDICAPITAL CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1324,
+                "PayerCode": "656",
+                "PayerName": "UNAGRA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1325,
+                "PayerCode": "659",
+                "PayerName": "ASP INTEGRA OPC CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1326,
+                "PayerCode": "680",
+                "PayerName": "CRISTOBAL COLON CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1327,
+                "PayerCode": "683",
+                "PayerName": "CAJA TELEFONIST CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1328,
+                "PayerCode": "684",
+                "PayerName": "OPM-TRANSFER CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1329,
+                "PayerCode": "685",
+                "PayerName": "FONDO (FIRA) CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1330,
+                "PayerCode": "686",
+                "PayerName": "INVERCAP CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1331,
+                "PayerCode": "689",
+                "PayerName": "FOMPED CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1332,
+                "PayerCode": "902",
+                "PayerName": "INDEVAL CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1468,
+                "PayerCode": "TDK",
+                "PayerName": "ALIANZA CAJAS POPULARES",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 109,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 4999.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1470,
+                "PayerCode": "132",
+                "PayerName": "MULTIVA BANCO CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1471,
+                "PayerCode": "600",
+                "PayerName": "MONEXCB CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1472,
+                "PayerCode": "613",
+                "PayerName": "MULTIVA CBOLSA CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "M EXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1473,
+                "PayerCode": "630",
+                "PayerName": "CB INTERCAM CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1474,
+                "PayerCode": "638",
+                "PayerName": "NU MEXICO-AKALA CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1476,
+                "PayerCode": "670",
+                "PayerName": "LIBERTAD CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1477,
+                "PayerCode": "706",
+                "PayerName": "ARCUS CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1479,
+                "PayerCode": "903",
+                "PayerName": "CoDi Valida CLABE\/TARJETA ",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1499,
+                "PayerCode": "AIRPAK",
+                "PayerName": "AIRPAK 10,000 MXN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 765,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 10000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1500,
+                "PayerCode": "AIRPAK",
+                "PayerName": "AIRPAK 20,000 MXN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 72,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 20000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1501,
+                "PayerCode": "AIRPAK",
+                "PayerName": "AIRPAK 25,000 MXN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 251,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 25000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1502,
+                "PayerCode": "AIRPAK",
+                "PayerName": "AIRPAK 90,000 MXN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "C urrencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 185,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 90000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1503,
+                "PayerCode": "APM",
+                "PayerName": "SUPER KOMPRAS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 11,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 900.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 300.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1587,
+                "PayerCode": "24XORO",
+                "PayerName": "COOPERATIVA ACREIMEX",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 133,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1682,
+                "PayerCode": "661",
+                "PayerName": "ALTERNATIVOS CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1683,
+                "PayerCode": "159",
+                "PayerName": "BANK OF CHINA CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1684,
+                "PayerCode": "710",
+                "PayerName": "NVIO CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1685,
+                "PayerCode": "703",
+                "PayerName": "TESORED CLABE\/TARJETA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1
+            },
+            {
+                "IdPayer": 1690,
+                "PayerCode": "4",
+                "PayerName": "S-MART",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 92,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": " MEXICO - MEXICAN PESO",
+                        "Amount": 22000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 40000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 70000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1692,
+                "PayerCode": "OXXO",
+                "PayerName": "OXXO (MAX $8,000 MXN)",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1818,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 8000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1693,
+                "PayerCode": "24XORO",
+                "PayerName": "BANCO AFIRME - ATM",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "ATM",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1851,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 9500.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1694,
+                "PayerCode": "24XORO",
+                "PayerName": "CONECTA2",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 20000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1695,
+                "PayerCode": "24XORO",
+                "PayerName": "TIENDAS GRAND",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 12,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1696,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR JOSÉ MA. VELASCO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 3,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1697,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR NUESTRA SEÑORA DE TONAYA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1698,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR PADRE EPIFANIO PADILLA DE TANGAMANDAPIO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1699,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR PROGRESO GARCIA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1700,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR SAN JOSÉ ITURBIDE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1701,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA POPULAR TEOCELO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 5,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1702,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA VILLANUEVA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 7,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1703,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA AGUASCALIENTES",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 4,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1704,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA CAMPESINA SANTA MARÍA AMEALCO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1705,
+                "P ayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA DOS RÍOS",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 2,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1706,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA EPITACIO HUERTA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 4,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1707,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA GUACHINANGO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 16,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1708,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA MINATITLÁN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 5,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1709,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA NUEVA GALICIA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 4,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1710,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA PUENTE DE CAMOTLÁN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 4,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1711,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA SAN DIONISIO OCOTEPEC",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 4,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEX ICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1712,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA SAN GABRIEL",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1713,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA SANTA MARÍA DEL ORO",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1714,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA SIERRA SAN JUAN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 7,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1715,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA TALA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1716,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA TECOLOTLÁN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 3,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1717,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA TEN APATZ TZOTZOB",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 8,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1718,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA VALLE DE GUADALUPE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 7,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1719,
+                "PayerCode": "24XORO",
+                "PayerName": "CAJA SOLIDARIA XOCHITLÁN",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1720,
+                "PayerCode": "24XORO",
+                "PayerName": "COOPERATIVA SAN ANDRÉS COYUTLA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 3,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1721,
+                "PayerCode": "24XORO",
+                "PayerName": "LA CAJA SOLIDARIA DE TEOCALTICHE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 7,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1722,
+                "PayerCode": "24XORO",
+                "PayerName": "SOLUCIÓN ASEA",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 33,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 1723,
+                "PayerCode": "24XORO",
+                "PayerName": "COOPERATIVA YOLOMECATL",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 10,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 57000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 35499,
+                "PayerCode": "PIX",
+                "PayerName": "FUNDACION DONDE",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "MXP",
+                                "CurrencyName": "MEXICAN PESO"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 377,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "MEXICO - MEXICAN PESO",
+                        "Amount": 30000.0000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "IdCountry": 2,
+        "CountryCode": "PER",
+        "CountryName": "PERU",
+        "PaymentTypes": [
+            {
+                "PaymentTypeGroup": "ATM"
+            },
+            {
+                "PaymentTypeGroup": "CASH"
+            },
+            {
+                "PaymentTypeGroup": "DEPOSIT"
+            }
+        ],
+        "Payers": [
+            {
+                "IdPayer": 14,
+                "PayerCode": " CTL       ",
+                "PayerName": "BANCO CONTINENTAL PERU",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 326,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "PERU - US DOLLARS",
+                        "Amount": 500.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "PERU - US DOLLARS",
+                        "Amount": 1000.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 59,
+                "PayerCode": "INTERBANK",
+                "PayerName": "BANCO INTERBANK PERU",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "ATM",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "PEN",
+                                "CurrencyName": "SOLES"
+                            },
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "PEN",
+                                "CurrencyName": "SOLES"
+                            },
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "PEN",
+                                "CurrencyName": "SOLES"
+                            },
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 1833,
+                "Limits": [
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 3000.0000
+                    },
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 1,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 10000.0000
+                    },
+                    {
+                        "TimeInDays": 0,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 800.0000
+                    }
+                ]
+            },
+            {
+                "IdPayer": 173,
+                "PayerCode": "BP01",
+                "PayerName": "BANCO DE CREDITO DEL PERU",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 6438
+            },
+            {
+                "IdPayer": 327,
+                "PayerCode": "JETPERU",
+                "PayerName": "JET PERU",
+                "PaymentTypes": [
+                    {
+                        "PaymentTypeGroup": "CASH",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "PEN",
+                                "CurrencyName": "SOLES"
+                            },
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    },
+                    {
+                        "PaymentTypeGroup": "DEPOSIT",
+                        "Currencies": [
+                            {
+                                "CurrencyCode": "PEN",
+                                "CurrencyName": "SOLES"
+                            },
+                            {
+                                "CurrencyCode": "USD",
+                                "CurrencyName": "US DOLLARS"
+                            }
+                        ]
+                    }
+                ],
+                "Branches": 30,
+                "Limits": [
+                    {
+                        "TimeInDays": 30,
+                        "CountryCurrency": "UNITED STATES - US DOLLARS",
+                        "Amount": 5000.0000
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral Fijo con Buscador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .dropdown-toggle::after {
+            margin-left: auto;
+        }
+
+        .dropdown-item i {
+            width: 20px;
+        }
+
+        .custom-dropdown-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-color:#E6ECEC">
+
+    <!-- Botón para móviles -->
+    <button class="btn btn-primary d-md-none m-3" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+        ☰ Menú
+    </button>
+   
+
+    <div id="contenedorMenu"></div>
+    <div id="contenedorMenuDerecho"></div>
+
+
+    <div class="content p-3">
+        <!-- Contenido -->
+        <div class="content p-2 container-buttons">
+            <!-- Contenedor con margen alrededor -->
+            <div class="d-flex flex-wrap justify-content-between">
+                <a href="index.html" class="btn btn-light m-1 button-style">Hacer Envío</a>
+                <a href="larga-distancia.html" class="btn btn-light m-1 button-style ">Larga Distancia y
+                    recargas</a>
+                    <a href="pago_bill_internacional.html" class="btn btn-light m-1 button-style ">Pago de Bill</a>
+                    <a href="cierre-caja.html" class="btn btn-light m-1 button-style">Cierre de Caja</a>
+                <a href="cambio-cheques.html" class="btn btn-light m-1 button-style">Cambio de Cheques</a>
+                <a href="deposito-cheques.html" class="btn btn-light m-1 button-style">Depósito de Cheques</a>
+            </div>
+        </div>
+
+
+        <div class="content p-2 container-cards">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+
+                                    <div class="justify-content-start">
+                                        Cliente
+                                    </div>
+
+                                    <div class="justify-content-end">
+                                        <i class="fa-solid fa-eraser iconos-cards"></i>
+                                    </div>
+
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <!-- Bloque 1 -->
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Teléfono:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Nombre(s)</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Apellido 1:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2">
+                                                <div class="col-5">
+                                                    <label for="monto" class="form-label text-label">Dirección::</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <label for="monto" class="form-label text-label">Zip Code:</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+                                    Tipo de servicios
+                                </div>
+                                <div class="card-body p-2"><!-- Primer Dropdown -->
+                                    <div>
+                                      <label for="categoria">Selecciona una categoría:</label>
+                                      <select id="categoria" class="form-select" onchange="mostrarBuscar()">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="auto">🚗 Auto Finance</option>
+                                        <option value="bank">🏦 Bank Card</option>
+                                        <option value="cable">📺 Cable</option>
+                                        <option value="cell">📱 Cell</option>
+                                        <option value="delivery">🚚 Delivery Service</option>
+                                        <option value="utilities">💡 Electric/Gas/Water</option>
+                                        <option value="financial">💰 Financial Services</option>
+                                        <option value="gas">⛽ Gas</option>
+                                        <option value="gasoline">🛢️ Gasoline Cards</option>
+                                        <option value="gov">🏛️ Government</option>
+                                      </select>
+                                      
+                                    </div>
+                                    
+                                    <!-- Segundo Dropdown con búsqueda -->
+                                    <div id="searchDiv" style="display:none;">
+                                      <label for="searchInput">Buscar un servicio:</label>
+                                      <div class="dropdown">
+                                        <input type="text" id="searchInput" class="form-control dropdown-toggle" placeholder="Buscar servicio..." onfocus="mostrarDropdown()" onkeyup="filtrarServicios()" autocomplete="off">
+                                        <ul id="searchList" class="dropdown-menu w-100">
+                                          <li><a href="#" class="dropdown-item">Auto Finance</a></li>
+                                          <li><a href="#" class="dropdown-item">Bank Card</a></li>
+                                          <li><a href="#" class="dropdown-item">Cable</a></li>
+                                          <li><a href="#" class="dropdown-item">Cell</a></li>
+                                          <li><a href="#" class="dropdown-item">Delivery Service</a></li>
+                                          <li><a href="#" class="dropdown-item">Electric/Gas/Power/Water</a></li>
+                                          <li><a href="#" class="dropdown-item">Financial Services</a></li>
+                                          <li><a href="#" class="dropdown-item">Gas</a></li>
+                                          <li><a href="#" class="dropdown-item">Gasoline Cards</a></li>
+                                          <li><a href="#" class="dropdown-item">Government</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+                                    <div class="justify-content-start">
+                                        Información del envió
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <i class="fa-solid fa-er    aser iconos-cards"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <!-- Bloque 1 -->
+                                            <div class="row mb-4">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">País:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected>Selecciona</option>
+                                                            <option value="1">México</option>
+                                                            <option value="2">Guatemala</option>
+                                                            <option value="3">El Salvador</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-8">
+                                                    <label for="monto" class="form-label text-label">Buscar</label>
+                                                    <input type="text" id="monto" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <!-- Botón Ventanilla -->
+                                                        <div class="col-3">
+                                                            <button class="btn-ventanilla">
+                                                                <i class="fas fa-store"></i> Ventanilla
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón Deposito -->
+                                                        <div class="col-3">
+                                                            <button class="btn-deposito">
+                                                                <i class="fas fa-piggy-bank"></i> Depósito
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón ATM -->
+                                                        <div class="col-3">
+                                                            <button class="btn-atm">
+                                                                <i class="fas fa-credit-card"></i> ATM
+                                                            </button>
+                                                        </div>
+                                                        <!-- Botón Domicilio -->
+                                                        <div class="col-3">
+                                                            <button class="btn-domicilio">
+                                                                <i class="fas fa-home"></i> Domicilio
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2">
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">País:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Estado, provincia o
+                                                        adepto:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="monto" class="form-label text-label">Ciudad:</label>
+                                                    <div class="col-12">
+                                                        <select id="comision" class="form-select w-100">
+                                                            <option value="" selected></option>
+                                                            <option value="1">5%</option>
+                                                            <option value="2">10%</option>
+                                                            <option value="3">15%</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="col-3">
+                    <div class="container-cards-hijas">
+                        <div class="card-header text-white justify-content-between align-items-center">
+                            <div class="justify-content-start">
+                                ¿Cuanto envia?
+                            </div>
+                            <div class="justify-content-end">
+                                <i class="fa-solid fa-eraser iconos-cards"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="card-body">
+                                <div class="container-fluid p-0">
+                                    <!-- Bloque 1 -->
+                                    <div class="row mb-2">
+                                        <div class="col-12">
+                                            <label for="monto" class="form-label text-label">Monto</label>
+                                            <input type="text" id="monto" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 2 -->
+                                    <div class="row mb-2">
+                                        <div class="col-4 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <select id="comision" class="form-select w-100">
+                                                <option value="" selected>0%</option>
+                                                <option value="1">5%</option>
+                                                <option value="2">10%</option>
+                                                <option value="3">15%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 3 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Total descuento:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 4 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Monto en USD:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 5 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión extra:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 6 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Total:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 7 -->
+                                    <div class="row mt-2 mb-3">
+                                        <div class="col-4 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <select id="comision" class="form-select w-100">
+                                                <option value="" selected>0%</option>
+                                                <option value="1">5%</option>
+                                                <option value="2">10%</option>
+                                                <option value="3">15%</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 8 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Comisión extra:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bloque 9 -->
+                                    <div class="row mb-1">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <label for="comision" class="form-label text-label">Monto en MN:</label>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="text-value">$0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-12 mb-1">
+                            <button class="btn-pre-recibo">Pre-recibo</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-enviar">Enviar</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-pago-tarjeta">Pago con tarjeta</button>
+                        </div>
+                        <div class="col-12 mb-1">
+                            <button class="btn-cancelar">Cancelar</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Muestra el segundo dropdown de búsqueda si se selecciona una opción
+        function mostrarBuscar() {
+          var selectedValue = document.getElementById("categoria").value;
+          var searchDiv = document.getElementById("searchDiv");
+          if (selectedValue) {
+            searchDiv.style.display = "block";  // Muestra el input de búsqueda
+          } else {
+            searchDiv.style.display = "none";   // Oculta el input de búsqueda
+          }
+        }
+      
+        // Muestra el dropdown al hacer click en el input de búsqueda
+        function mostrarDropdown() {
+          var searchList = document.getElementById("searchList");
+          searchList.style.display = "block";  // Muestra el dropdown
+      
+          // Si no hay texto en el input, muestra todas las opciones
+          filtrarServicios();
+        }
+      
+        // Filtra las opciones del segundo dropdown conforme se escribe
+        function filtrarServicios() {
+          var input = document.getElementById('searchInput').value.toUpperCase();
+          var list = document.getElementById('searchList');
+          var items = list.getElementsByTagName('li');
+          var show = false;
+          
+          // Muestra el dropdown si hay algo en el input
+          if (input) {
+            list.style.display = 'block';
+          } else {
+            list.style.display = 'block'; // Mantenemos el dropdown visible aunque no se haya escrito nada
+          }
+      
+          // Itera sobre las opciones y las oculta o muestra según el filtro
+          Array.from(items).forEach(function(item) {
+            var text = item.textContent || item.innerText;
+            if (text.toUpperCase().indexOf(input) > -1) {
+              item.style.display = '';  // Muestra la opción
+              show = true;
+            } else {
+              item.style.display = 'none';  // Oculta la opción
+            }
+          });
+      
+          // Si no hay opciones que mostrar, oculta el dropdown
+          if (!show) {
+            list.style.display = 'none';
+          }
+        }
+      
+        // Cierra el dropdown al seleccionar una opción
+        document.getElementById('searchList').addEventListener('click', function(event) {
+          if (event.target && event.target.matches("a.dropdown-item")) {
+            document.getElementById('searchInput').value = event.target.textContent;
+            document.getElementById('searchList').style.display = 'none';  // Ocultar el dropdown después de selección
+          }
+        });
+      
+        // Cierra el dropdown cuando el usuario hace clic fuera del dropdown
+        document.addEventListener('click', function(event) {
+          var dropdown = document.querySelector('.dropdown');
+          if (!dropdown.contains(event.target)) {
+            document.getElementById('searchList').style.display = 'none';
+          }
+        });
+
+
+        window.addEventListener('load', function () {
+            var modal = new bootstrap.Modal(document.getElementById('miModal'));
+            modal.show();
+        });
+      </script>
+
+<script>
+    // Cargar el menú principal
+    fetch('../menu.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('contenedorMenu').innerHTML = data;
+            // Llamar al archivo menu_activador.js después de cargar el menú
+            loadMenuActivator();
+        });
+    // Cargar el menú derecho
+    fetch('../menu_derecho.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('contenedorMenuDerecho').innerHTML = data;
+        });
+</script>
+<!-- Cargar el script del activador del menú -->
+<script src="../js/menu_activador.js"></script>
+</body>
+
+</html>

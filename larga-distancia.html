@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral Fijo con Buscador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+</head>
+
+<body style="background-color:#E6ECEC">
+
+    <!-- Botón para móviles -->
+    <button class="btn btn-primary d-md-none m-3" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+        ☰ Menú
+    </button>
+    <div id="contenedorMenu"></div>
+    <div id="contenedorMenuDerecho"></div>
+
+    <!-- Menú o Div de contenido adicional a la derecha -->
+    <div class="extra-content p-3">
+        <div class="container">
+            <!-- Cuadro Redondeado con logo y detalles -->
+            <div class="rounded-box">
+                <!-- Logo en la parte superior -->
+                <div class="logo-container">
+                    <img src="imagenes/logo dinex.png" alt="Logo" height="50px">
+                </div>
+
+                <!-- Detalles con icono, nombre y teléfono -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-details">
+                            <span class="name">Contabilidad:</span>
+                            <span class="phone-number">+52 123 456 7890</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-details">
+                            <span class="name">Soporte:</span>
+                            <span class="phone-number">+52 987 654 3210</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-details">
+                            <span class="name">Cumplimiento:</span>
+                            <span class="phone-number">+52 112 233 4455</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-details">
+                            <span class="name">Ventas:</span>
+                            <span class="phone-number">+52 665 778 8990</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Cuadro rosa con "Agencia" y el nombre -->
+                    <div class="agency-box">
+                        <span class="agency-name">Agencia</span>
+                        <div class="agency-code">D-1232-H</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Tarjeta con pestañas -->
+            <div style="margin-top: 40px;">
+                <div class="tabs">
+                    <div class="tab-container margin-top:15px">
+                        <div id="tab1" class="tab mt-3">
+                            <a href="#tab1">
+                                Pestaña 1
+                            </a>
+                            <div class="tab-content" style="color: #000000aa;">
+
+                                <div class="flag-number-list">
+                                    <div class="flag-number">
+                                        <i class="fas fa-flag-usa"></i> <!-- Icono de bandera (USA) -->
+                                        <span class="text-black">$16.1234</span>
+                                    </div>
+                                    <div class="flag-number">
+                                        <i class="fas fa-flag-usa"></i> <!-- Icono de bandera (USA) -->
+                                        <span class="text-black">$6.1234</span>
+                                    </div>
+                                    <div class="flag-number">
+                                        <i class="fas fa-flag-usa"></i> <!-- Icono de bandera (USA) -->
+                                        <span class="text-black">$24.1234</span>
+                                    </div>
+                                    <div class="flag-number">
+                                        <i class="fas fa-flag-usa"></i> <!-- Icono de bandera (USA) -->
+                                        <span class="text-black">$5,464.1234</span>
+                                    </div>
+                                    <div class="flag-number">
+                                        <i class="fas fa-flag-usa"></i> <!-- Icono de bandera (USA) -->
+                                        <span class="text-black">$56.1234</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab mt-3">
+                            <a href="#tab2">Pestaña 2</a>
+                            <div class="tab-content">
+                                <h2>Título 2</h2>
+                                <p>Contenido de la Pestaña 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="section-promotions" style="margin-top:55px;">
+                <section class="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                            </div>
+                        </li>
+                        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                        </li>
+                    </ol>
+                    <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+                        </ol>
+                    </aside>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content p-3">
+        <!-- Contenido -->
+        <div class="content p-2 container-buttons">
+            <!-- Contenedor con margen alrededor -->
+            <div class="d-flex flex-wrap justify-content-between">
+                <a href="index.html" class="btn btn-light m-1 button-style">Hacer Envío</a>
+                <a href="larga-distancia.html" class="btn btn-light m-1 button-style active ">Larga Distancia y
+                    recargas</a>
+                <a href="pago_bill_internacional.html" class="btn btn-light m-1 button-style ">Pago de Bill</a>
+                <a href="cierre-caja.html" class="btn btn-light m-1 button-style">Cierre de Caja</a>
+                <a href="cambio-cheques.html" class="btn btn-light m-1 button-style">Cambio de Cheques</a>
+                <a href="deposito-cheques.html" class="btn btn-light m-1 button-style">Depósito de Cheques</a>
+            </div>
+        </div>
+
+
+
+        <div class="content p-2 container-cards">
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-cards-hijas">
+                                <div class="card-header text-white justify-content-between align-items-center">
+                                    <div class="justify-content-start">
+                                        Información de la cuenta
+                                    </div>
+                                    <div class="justify-content-end">
+                                        <i class="fa-solid fa-er    aser iconos-cards"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <div class="row mb-2 d-none">
+                                                <div class="col-12">
+                                                    <div class="justify-content-end">
+                                                        <label for="tipo_busqueda"
+                                                            class="form-label text-label">Cancelación:</label>
+                                                        <select id="tipo_busqueda" class="form-select w-100"
+                                                            style="height: 35px;">
+                                                            <option value="1" selected>Solicitud</option>
+                                                            <option value="2">Pendientes</option>
+                                                            <option value="3">Resultados</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_fecha_inicial">
+                                                <div class="col-12">
+                                                    <label for="fecha_inicio" class="form-label text-label">Fecha
+                                                        inicial:</label>
+                                                    <input type="date" id="fecha_inicio" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_fecha_final">
+                                                <div class="col-12">
+                                                    <label for="fecha_final" class="form-label text-label">Hasta
+                                                        fecha:</label>
+                                                    <input type="date" id="fecha_final" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_numero_cuenta">
+                                                <div class="col-12">
+                                                    <label for="numero_cuenta" class="form-label text-label">Número de
+                                                        Cuenta:</label>
+                                                    <input type="text" id="numero_cuenta" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_destino">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Destino:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_nombre_cuenta">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Nombre
+                                                        Cuenta:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2" id="grupo_estatus">
+                                                <div class="col-12">
+                                                    <div class="justify-content-end">
+                                                        <label for="estatus"
+                                                            class="form-label text-label">Estatus:</label>
+                                                        <select id="estatus" class="form-select w-100"
+                                                            style="height: 35px;">
+                                                            <option value="" selected>Seleccionar</option>
+                                                            <option value="1">Juan Carlos López</option>
+                                                            <option value="2">Damian Alvarez</option>
+                                                            <option value="3">Yazmin Garcia Reyes</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_producto">
+                                                <div class="col-12">
+                                                    <div class="justify-content-end">
+                                                        <label for="producto"
+                                                            class="form-label text-label">Producto:</label>
+                                                        <select id="producto" class="form-select w-100"
+                                                            style="height: 35px;">
+                                                            <option value="" selected>Seleccionar</option>
+                                                            <option value="1">Juan Carlos López</option>
+                                                            <option value="2">Damian Alvarez</option>
+                                                            <option value="3">Yazmin Garcia Reyes</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2" id="grupo_buscar">
+                                                <div class="col-12">
+                                                    <div class="justify-content-end">
+                                                        <label for="producto" class="form-label text-label">Buscar
+                                                            por:</label>
+                                                        <select id="producto" class="form-select w-100"
+                                                            style="height: 35px;">
+                                                            <option value="" selected>Seleccionar</option>
+                                                            <option value="1">Juan Carlos López</option>
+                                                            <option value="2">Damian Alvarez</option>
+                                                            <option value="3">Yazmin Garcia Reyes</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                            <div class="row mb-2" id="grupo_nombre">
+                                                <div class="col-12">
+                                                    <label for="destino"
+                                                        class="form-label text-label">Nombre(s):</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_apellido_paterno">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Apellido
+                                                        Paterno:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2" id="grupo_apellido_materno">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Apellido
+                                                        Materno:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_direccion">
+                                                <div class="col-12">
+                                                    <label for="destino"
+                                                        class="form-label text-label">Dirección:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_codigo_postal">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Código
+                                                        postal:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2" id="grupo_telefono">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Teléfono:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row mb-2" id="grupo_celular">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Celular:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <div class="row mb-2" id="grupo_pais">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">País</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_tipo_de_pago">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Tipo de
+                                                        Pago:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2" id="grupo_estado">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Estado,
+                                                        provinicia o depto:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-2" id="grupo_ciudad">
+                                                <div class="col-12">
+                                                    <label for="destino" class="form-label text-label">Ciudad:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row mb-2" id="grupo_institucion">
+                                                <div class="col-12">
+                                                    <label for="destino"
+                                                        class="form-label text-label">Institución:</label>
+                                                    <input type="text" id="destino" class="form-control">
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row mb-2 justify-content-end">
+                                                <div class="col-auto">
+                                                    <div class="form-check text-end">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="busqueda_global">
+                                                        <label class="form-check-label" for="busqueda_global"
+                                                            style="font-size: 18px;">
+                                                            Búsqueda global
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+                                            <div class="row mt-3">
+                                                <div class="col-12 mb-1">
+                                                    <button class="btn-pre-recibo">Buscar</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center align-items-center d-flex mt-4 mb-4">
+                                                <div class="col-6">
+                                                    <img src="../imagenes/amigo-sinpin.jpeg" class="img-fluid"
+                                                        alt="Foto de un amigo sin pin">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-4">
+                                                <label for="">Recargas efectivas inmediatamente, no hay
+                                                    reembolso.</label>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="container-cards-hijas" style="display: none;" id="miTabla-contenido">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        // Función que formatea la información detallada de la fila
+        function format(d) {
+            return `
+            <table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">
+              <tr>
+                  <td><strong>Fecha:</strong></td>
+                  <td>${d[0]}</td>
+              </tr>
+              <tr>
+                  <td><strong>Control:</strong></td>
+                  <td>${d[1]}</td>
+              </tr>
+              <tr>
+                  <td><strong>Estatus:</strong></td>
+                  <td>${d[2]}</td>
+              </tr>
+              <tr>
+                  <td><strong>Número de Cuenta:</strong></td>
+                  <td>${d[3]}</td>
+              </tr>
+              <tr>
+                  <td><strong>Producto:</strong></td>
+                  <td>${d[4]}</td>
+              </tr>
+            </table>
+          `;
+        }
+
+        $(document).ready(function () {
+            var table = $('#miTabla').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/Spanish.json"
+                }
+            });
+
+            // Agregar evento para mostrar/ocultar detalles al hacer clic en una fila
+            $('#miTabla tbody').on('click', 'tr', function () {
+                var tr = $(this);
+                var row = table.row(tr);
+
+                if (row.child.isShown()) {
+                    // Si la fila ya está abierta, se cierra
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else {
+                    // Mostrar la información detallada debajo de la fila
+                    row.child(format(row.data())).show();
+                    tr.addClass('shown');
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const tipoBusqueda = document.getElementById('tipo_busqueda');
+            const contenedorTabla = document.getElementById('miTabla-contenido');
+            const btnBuscar = document.querySelector('.btn-pre-recibo');
+
+            const grupos = {
+                grupo_fecha_inicial: document.getElementById('grupo_fecha_inicial'),
+                grupo_fecha_final: document.getElementById('grupo_fecha_final'),
+                grupo_numero_cuenta: document.getElementById('grupo_numero_cuenta'),
+                grupo_destino: document.getElementById('grupo_destino'),
+                grupo_estatus: document.getElementById('grupo_estatus'),
+                grupo_producto: document.getElementById('grupo_producto'),
+                grupo_buscar: document.getElementById('grupo_buscar'),
+                grupo_nombre: document.getElementById('grupo_nombre'),
+                grupo_apellido_paterno: document.getElementById('grupo_apellido_paterno'),
+                grupo_apellido_materno: document.getElementById('grupo_apellido_materno'),
+                grupo_direccion: document.getElementById('grupo_direccion'),
+                grupo_codigo_postal: document.getElementById('grupo_codigo_postal'),
+                grupo_telefono: document.getElementById('grupo_telefono'),
+                grupo_celular: document.getElementById('grupo_celular'),
+                grupo_pais: document.getElementById('grupo_pais'),
+                grupo_tipo_de_pago: document.getElementById('grupo_tipo_de_pago'),
+                grupo_estado: document.getElementById('grupo_estado'),
+                grupo_ciudad: document.getElementById('grupo_ciudad'),
+                grupo_institucion: document.getElementById('grupo_institucion'),
+                grupo_nombre_cuenta: document.getElementById('grupo_nombre_cuenta')
+
+            };
+
+            function ocultarTodos() {
+                for (let key in grupos) {
+                    grupos[key].style.display = 'none';
+                }
+            }
+
+            tipoBusqueda.addEventListener('change', function () {
+                ocultarTodos();
+                const valor = this.value;
+
+                // Limpiar la tabla primero
+                contenedorTabla.innerHTML = '';
+                contenedorTabla.style.display = 'none';
+
+                if (valor === '1') { // Recargas
+                    grupos.grupo_telefono.style.display = 'block';
+
+
+                } else if (valor === '2') { // Clientes
+                    grupos.grupo_fecha_inicial.style.display = 'block';
+                    grupos.grupo_fecha_final.style.display = 'block';
+                    grupos.grupo_buscar.style.display = 'block';
+                } else if (valor === '3') {
+                    grupos.grupo_fecha_inicial.style.display = 'block';
+                    grupos.grupo_fecha_final.style.display = 'block';
+                    grupos.grupo_buscar.style.display = 'block';
+                } else if (valor === '4') {
+                    grupos.grupo_fecha_inicial.style.display = 'block';
+                    grupos.grupo_fecha_final.style.display = 'block';
+                    grupos.grupo_estatus.style.display = 'block';
+                    grupos.grupo_nombre.style.display = 'block';
+                    grupos.grupo_apellido_materno.style.display = 'block';
+                    grupos.grupo_apellido_paterno.style.display = 'block';
+                    grupos.grupo_direccion.style.display = 'block';
+                    grupos.grupo_codigo_postal.style.display = 'block';
+                    grupos.grupo_telefono.style.display = 'block';
+                    grupos.grupo_celular.style.display = 'block';
+                } else if (valor === '6') {
+                    grupos.grupo_pais.style.display = 'block';
+                    grupos.grupo_tipo_de_pago.style.display = 'block';
+                    grupos.grupo_estado.style.display = 'block';
+                    grupos.grupo_ciudad.style.display = 'block';
+                    grupos.grupo_institucion.style.display = 'block';
+                } else if (valor === '5') { // Usuarios
+                    contenedorTabla.innerHTML = `
+            <table id="miTabla" class="display">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nombre de usuario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Juan Pérez</td><td>juan.pz</td></tr>
+                    <tr><td>María López</td><td>marialopez88</td></tr>
+                    <tr><td>Carlos Ramírez</td><td>cramirez</td></tr>
+                    <tr><td>Ana Torres</td><td>ana_torres</td></tr>
+                    <tr><td>Luis Hernández</td><td>lhernandez21</td></tr>
+                    <tr><td>Sofía González</td><td>sofia_gz</td></tr>
+                    <tr><td>Miguel Martínez</td><td>miguelm</td></tr>
+                    <tr><td>Laura Sánchez</td><td>lau_san</td></tr>
+                    <tr><td>Jorge Castillo</td><td>jcastillo90</td></tr>
+                    <tr><td>Fernanda Romero</td><td>fer.romero</td></tr>
+                </tbody>
+            </table>
+        `;
+
+                    // Esperar un poco y luego activar DataTable
+                    setTimeout(() => {
+                        $('#miTabla').DataTable();
+                    }, 1);
+                }
+
+                // Mostrar la tabla después de la carga de datos
+                contenedorTabla.style.display = 'block';
+            });
+
+
+            btnBuscar.addEventListener('click', function () {
+                const valor = tipoBusqueda.value;
+
+                contenedorTabla.innerHTML = ''; // Limpiar contenido anterior
+                contenedorTabla.style.display = 'block';
+
+                if (valor === '0') {
+                    contenedorTabla.innerHTML = `<p>Tabla de Recargas</p>`;
+                } else if (valor === '1') {
+                    contenedorTabla.innerHTML = `
+        <table id="miTabla" class="display">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Control</th>
+                    <th>Estatus</th>
+                    <th>Número de Cuenta</th>
+                    <th>Producto</th>
+                </tr>
+            </thead>
+        <tbody>
+                                <tr>
+                                    <td>01/04/2025</td>
+                                    <td>123456</td>
+                                    <td>Procesado</td>
+                                    <td>9876543210</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>02/04/2025</td>
+                                    <td>789012</td>
+                                    <td>Pendiente</td>
+                                    <td>5678901234</td>
+                                    <td>Pago de servicio</td>
+                                </tr>
+                                <tr>
+                                    <td>03/04/2025</td>
+                                    <td>345678</td>
+                                    <td>Rechazado</td>
+                                    <td>1234509876</td>
+                                    <td>Depósito</td>
+                                </tr>
+                                <tr>
+                                    <td>04/04/2025</td>
+                                    <td>901234</td>
+                                    <td>Completado</td>
+                                    <td>6789054321</td>
+                                    <td>Retiro</td>
+                                </tr>
+                                <tr>
+                                    <td>05/04/2025</td>
+                                    <td>567890</td>
+                                    <td>En proceso</td>
+                                    <td>4321098765</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>01/04/2025</td>
+                                    <td>123456</td>
+                                    <td>Procesado</td>
+                                    <td>9876543210</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>02/04/2025</td>
+                                    <td>789012</td>
+                                    <td>Pendiente</td>
+                                    <td>5678901234</td>
+                                    <td>Pago de servicio</td>
+                                </tr>
+                                <tr>
+                                    <td>03/04/2025</td>
+                                    <td>345678</td>
+                                    <td>Rechazado</td>
+                                    <td>1234509876</td>
+                                    <td>Depósito</td>
+                                </tr>
+                                <tr>
+                                    <td>04/04/2025</td>
+                                    <td>901234</td>
+                                    <td>Completado</td>
+                                    <td>6789054321</td>
+                                    <td>Retiro</td>
+                                </tr>
+                                <tr>
+                                    <td>05/04/2025</td>
+                                    <td>567890</td>
+                                    <td>En proceso</td>
+                                    <td>4321098765</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>01/04/2025</td>
+                                    <td>123456</td>
+                                    <td>Procesado</td>
+                                    <td>9876543210</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>02/04/2025</td>
+                                    <td>789012</td>
+                                    <td>Pendiente</td>
+                                    <td>5678901234</td>
+                                    <td>Pago de servicio</td>
+                                </tr>
+                                <tr>
+                                    <td>03/04/2025</td>
+                                    <td>345678</td>
+                                    <td>Rechazado</td>
+                                    <td>1234509876</td>
+                                    <td>Depósito</td>
+                                </tr>
+                                <tr>ban
+                                    <td>04/04/2025</td>
+                                    <td>901234</td>
+                                    <td>Completado</td>
+                                    <td>6789054321</td>
+                                    <td>Retiro</td>
+                                </tr>
+                                <tr>
+                                    <td>05/04/2025</td>
+                                    <td>567890</td>
+                                    <td>En proceso</td>
+                                    <td>4321098765</td>
+                                    <td>Transferencia</td>
+                                </tr>
+                            </tbody>
+        </table>`;
+
+                    // Esperar un poco y luego activar DataTable
+                    setTimeout(() => {
+                        $('#miTabla').DataTable();
+                    }, 100);
+                } else if (valor === '3') {
+                    contenedorTabla.innerHTML = `<p>Tabla de Cheques</p>`;
+                } else if (valor === '5') {
+                    contenedorTabla.innerHTML = `<table id="miTabla" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Nombre de usuario</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Juan Pérez</td>
+                                        <td>juan.pz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>María López</td>
+                                        <td>marialopez88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carlos Ramírez</td>
+                                        <td>cramirez</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ana Torres</td>
+                                        <td>ana_torres</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luis Hernández</td>
+                                        <td>lhernandez21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sofía González</td>
+                                        <td>sofia_gz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miguel Martínez</td>
+                                        <td>miguelm</td>
+                                    </tr>
+                                    <tr>
+                                       s <td>Laura Sánchez</td>
+                                        <td>lau_san</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jorge Castillo</td>
+                                        <td>jcastillo90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fernanda Romero</td>
+                                        <td>fer.romero</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            `;
+                    setTimeout(() => {
+                        $('#miTabla').DataTable();
+                    }, 100);
+                } else if (valor === '6') {
+                    contenedorTabla.innerHTML = `<p>Tabla de Instituciones</p>`;
+                } else {
+                    contenedorTabla.innerHTML = `<p>No hay datos para mostrar</p>`;
+                }
+            });
+
+
+            // Inicializa ocultando todo y mostrando lo necesario
+            ocultarTodos();
+            tipoBusqueda.dispatchEvent(new Event('change'));
+        });
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+<script>
+    // Cargar el menú principal
+    fetch('../menu.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('contenedorMenu').innerHTML = data;
+            // Llamar al archivo menu_activador.js después de cargar el menú
+            loadMenuActivator();
+        });
+    // Cargar el menú derecho
+    fetch('../menu_derecho.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('contenedorMenuDerecho').innerHTML = data;
+        });
+</script>
+<!-- Cargar el script del activador del menú -->
+<script src="../js/menu_activador.js"></script>
+
+</body>
+
+</html>
