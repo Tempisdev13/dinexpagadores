@@ -34,7 +34,7 @@
 
     <!-- Hero -->
     <div class="hero">
-        <h1>Envía dinero a <span id="pais-destino" class="text-success">[PAÍS]</span></h1>
+        <h1>Envía dinero a <span class=" pais-destino text-success">[PAÍS]</span></h1>
         <ul id="countries-list"></ul>
 
         <p>Tu familia puede recibir dinero en muchos lugares.</p>
@@ -76,7 +76,7 @@
         <div class="row justify-content-center">
             <div class="col-7">
                <p style="font-size: 24px; font-weight: 400">Con Dinex puedes enviar dinero a <span
-                        class="pais-destino text-success"></span> los siguientes
+                        class="pais-destino text-success"></span> en los siguientes
                     Bancos y Puntos de Pago.</p>
             </div>
         </div>
@@ -224,8 +224,7 @@
 
 
 
-
-    <script>
+<script>
         document.addEventListener('DOMContentLoaded', function () {
             const countryIdInput = document.getElementById('country-id');
             let countryId = countryIdInput ? countryIdInput.value : '1';
@@ -286,9 +285,10 @@
             const isoCode = isoAlpha2[code];
 
             // Cambiar nombre del país
-            const paisDestino = document.getElementById('pais-destino');
-            if (paisDestino) paisDestino.textContent = name;
-
+            const paisesDestino = document.getElementsByClassName('pais-destino');
+            for (let i = 0; i < paisesDestino.length; i++) {
+                paisesDestino[i].textContent = name;
+            }
             // Cambiar bandera
             const flagImg = document.getElementById('flag');
             if (flagImg && isoCode) {
